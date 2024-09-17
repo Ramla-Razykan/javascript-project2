@@ -83,6 +83,13 @@ p {
     }
 }
 
+@media(max-width: 1642px){
+    .inputs {
+        display: flex;
+    }
+
+}
+
 @media(max-width: 425px){
     .container{
         text-align:center;
