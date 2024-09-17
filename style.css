@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -25,11 +25,11 @@ body {
     text-align: center;
 }
 
-.inputs label{
+.inputs label {
     font-size: clamp(1rem, 100vw, 1.2rem);
 }
 
-.inputs input{
+.inputs input {
     width: 15rem;
     padding: 1rem 0.2rem;
     border: none;
@@ -49,11 +49,42 @@ button {
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    margin: 1rem ;
+    margin: 1rem;
     color: #f8be53;
 }
 
 p {
     color: #ec790e;
     font-size: clamp(1rem, 100vw, 2.5rem);
+}
+
+
+@media(max-width: 1440px) {
+    .inputs {
+        display: flex;
+    }
+}
+
+@media(max-width: 1024px){
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container{
+        text-align:start;
+    }
+}
+
+@media(max-width: 425px){
+    .container{
+        text-align:center;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
